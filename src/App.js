@@ -16,7 +16,7 @@ function App() {
           rel="noreferrer"
           title="GitHub repository"
         >
-          <i class="fa-brands fa-github github-icon"></i>
+          <i className="fa-brands fa-github github-icon"></i>
         </a>
       </footer>
     </div>

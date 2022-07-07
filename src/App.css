@@ -11,6 +11,7 @@ footer {
 }
 
 .App .container {
+  max-width: 600px;
   padding: 100px;
 }
 
