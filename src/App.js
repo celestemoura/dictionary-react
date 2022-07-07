@@ -13,6 +13,8 @@ function App() {
         <a
           href="https://github.com/celestemoura/dictionary-react"
           target="_blank"
+          rel="noreferrer"
+          title="GitHub repository"
         >
           <i class="fa-brands fa-github github-icon"></i>
         </a>
