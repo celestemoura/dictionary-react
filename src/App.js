@@ -1,9 +1,15 @@
 import "./App.css";
+import "bootstrap/dist/css/bootstrap.css";
+import Dictionary from "./Dictionary";
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello from Dictionary</h1>
+      <div className="container">
+        <h1>Dictionary</h1>
+          <Dictionary />
+        <footer>Coded by Celeste</footer>
+      </div>
     </div>
   );
 }

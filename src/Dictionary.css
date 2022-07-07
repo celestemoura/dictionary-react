@@ -1,0 +1,8 @@
+.search-button {
+  padding: 5px;
+}
+
+.search-button:hover {
+  cursor: pointer;
+  padding: 5px;
+}
