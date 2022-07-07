@@ -1,23 +1,20 @@
 footer {
-  font-size: small;
-  padding-top: 100px;
+  margin-bottom: 50px;
+}
+
+.App h1 {
+  opacity: 0.6;
 }
 
 .App {
   text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.App .container {
+  padding: 100px;
 }
 
-.App-link {
-  color: #61dafb;
+.App .github-icon {
+  color: black;
+  opacity: 0.6;
 }

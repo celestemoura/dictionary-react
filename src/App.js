@@ -7,9 +7,16 @@ function App() {
     <div className="App">
       <div className="container">
         <h1>Dictionary</h1>
-          <Dictionary />
-        <footer>Coded by Celeste</footer>
+        <Dictionary />
       </div>
+      <footer>
+        <a
+          href="https://github.com/celestemoura/dictionary-react"
+          target="_blank"
+        >
+          <i class="fa-brands fa-github github-icon"></i>
+        </a>
+      </footer>
     </div>
   );
 }

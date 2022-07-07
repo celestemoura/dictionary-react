@@ -1,8 +1,18 @@
+form {
+  padding: 20px;
+}
+
 .search-button {
+  font-size: 20px;
+  opacity: 0.6;
   padding: 5px;
 }
 
 .search-button:hover {
   cursor: pointer;
-  padding: 5px;
+}
+
+.Meaning h3 {
+  font-size: 22px;
+  opacity: 0.6;
 }
