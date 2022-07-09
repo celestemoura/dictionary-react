@@ -1,17 +1,10 @@
 footer {
   margin-bottom: 50px;
-}
-
-.App h1 {
-  opacity: 0.6;
-}
-
-.App {
   text-align: center;
 }
 
 .App .container {
-  max-width: 600px;
+  max-width: 1000px;
   padding: 100px;
 }
 
