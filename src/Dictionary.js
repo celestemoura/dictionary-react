@@ -25,7 +25,7 @@ export default function Dictionary() {
 
   return (
     <div className="Dictionary">
-      <div className="row">
+      <div className="row search-engine">
         <div className="col-11">
           <form onSubmit={search}>
             <input

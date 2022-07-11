@@ -1,0 +1,16 @@
+.Synonyms {
+  font-family: "M PLUS 1p", sans-serif;
+}
+
+.Synonyms li {
+  color: var(--secondary-color);
+  font-size: small;
+  list-style: none;
+  margin-right: 20px;
+  padding: 5px;
+}
+
+.Synonyms ul {
+  display: inline-block;
+  padding-left: 0px;
+}

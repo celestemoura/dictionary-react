@@ -1,10 +1,15 @@
-footer {
+:root {
+  --main-color: #702283;
+  --secondary-color: #962071;
+}
+
+.App footer {
   margin-bottom: 50px;
   text-align: center;
 }
 
 .App .container {
-  max-width: 1000px;
+  max-width: 1200px;
   padding: 100px;
 }
 
