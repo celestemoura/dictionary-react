@@ -24,9 +24,19 @@ export default function Meaning(props) {
     "18",
     "19",
     "20",
+    "21",
+    "22",
+    "23",
+    "24",
+    "25",
+    "26",
+    "27",
+    "28",
+    "29",
+    "30",
   ];
   return (
-    <div className="Meaning">
+    <div className="Meaning inner-container">
       <h3>{props.meaning.partOfSpeech}</h3>
       {props.meaning.definitions.map(function (definition, index) {
         return (

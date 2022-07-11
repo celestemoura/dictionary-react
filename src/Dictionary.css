@@ -3,11 +3,11 @@
 }
 
 .Dictionary input {
-  border: 1px solid black;
-  border-radius: 10px;
+  border: 1px solid var(--main-color);
+  border-radius: 8px;
   display: block;
   font-family: "M PLUS 1p", sans-serif;
-  font-size: 24px;
+  font-size: 20px;
   margin: 0 auto;
   padding: 10px;
   text-align: center;
@@ -17,7 +17,7 @@
 .Dictionary .search-button {
   color: var(--main-color);
   font-size: 30px;
-  opacity: 0.7;
+  opacity: 0.8;
   position: relative;
   top: 44px;
   right: 210px;
@@ -27,4 +27,13 @@
   cursor: pointer;
 }
 
+@media (max-width: 576px) {
+  .Dictionary input {
+    font-size: 15px;
+    width: 120%;
+  }
 
+  .Dictionary .search-button {
+    display: none;
+  }
+}

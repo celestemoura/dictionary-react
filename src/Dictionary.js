@@ -3,46 +3,60 @@ import axios from "axios";
 import Results from "./Results";
 import "./Dictionary.css";
 
-export default function Dictionary() {
-  const [query, setQuery] = useState(null);
+export default function Dictionary(props) {
+  const [query, setQuery] = useState(props.defaultQuery);
   const [results, setResults] = useState(null);
+  const [loaded, setLoaded] = useState(false);
 
   function handleResponse(response) {
     setResults(response.data[0]);
   }
 
-  function search(event) {
-    event.preventDefault();
-
+  function search() {
     //https://dictionaryapi.dev/
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${query}`;
     axios.get(apiUrl).then(handleResponse);
+  }
+
+  function load() {
+    setLoaded(true);
+    search();
+  }
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    search();
   }
 
   function handleSearch(event) {
     setQuery(event.target.value);
   }
 
-  return (
-    <div className="Dictionary">
-      <div className="row search-engine">
-        <div className="col-11">
-          <form onSubmit={search}>
-            <input
-              type="search"
-              onChange={handleSearch}
-              placeholder="Search for a Word"
-            />
-          </form>
+  if (loaded) {
+    return (
+      <div className="Dictionary">
+        <div className="row search-engine">
+          <div className="col-lg-11">
+            <form onSubmit={handleSubmit}>
+              <input
+                type="search"
+                onChange={handleSearch}
+                placeholder="Search for a Word"
+              />
+            </form>
+          </div>
+          <div className="col-lg-1">
+            <i
+              className="fa-solid fa-magnifying-glass search-button"
+              onClick={handleSubmit}
+            ></i>
+          </div>
         </div>
-        <div className="col-1">
-          <i
-            className="fa-solid fa-magnifying-glass search-button"
-            onClick={search}
-          ></i>
-        </div>
+        <Results results={results} />
       </div>
-      <Results results={results} />
-    </div>
-  );
+    );
+  } else {
+    load();
+    return "Loading...";
+  }
 }

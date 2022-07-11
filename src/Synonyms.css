@@ -4,13 +4,11 @@
 
 .Synonyms li {
   color: var(--secondary-color);
-  font-size: small;
+  display: inline-block;
   list-style: none;
   margin-right: 20px;
-  padding: 5px;
 }
 
-.Synonyms ul {
-  display: inline-block;
-  padding-left: 0px;
+ul {
+  padding: 0px;
 }
