@@ -2,9 +2,13 @@
   font-family: "M PLUS 1p", sans-serif;
 }
 
-.Results h2 {
+.Results h1 {
   color: var(--main-color);
   font-family: "Noto Serif", serif;
-  font-size: 36px;
+  font-size: 50px;
   margin-bottom: 30px;
+}
+
+.Results .pre-headline {
+  font-size: 14px;
 }

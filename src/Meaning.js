@@ -36,8 +36,8 @@ export default function Meaning(props) {
     "30",
   ];
   return (
-    <div className="Meaning inner-container">
-      <h3>{props.meaning.partOfSpeech}</h3>
+    <div className="Meaning">
+      <h2>{props.meaning.partOfSpeech}</h2>
       {props.meaning.definitions.map(function (definition, index) {
         return (
           <div key={index} className="definition">

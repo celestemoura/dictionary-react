@@ -2,11 +2,15 @@
   font-family: "M PLUS 1p", sans-serif;
 }
 
-.Meaning h3 {
+.Meaning h2 {
   color: var(--main-color);
-  font-size: 22px;
+  font-size: 40px;
   margin-top: 30px;
   margin-bottom: 0;
+}
+
+.Meaning p {
+  margin: 5px;
 }
 
 .Meaning .definition {
@@ -15,7 +19,4 @@
 
 .Meaning .example {
   color: var(--main-color);
-}
-
-.inner-container {
 }
