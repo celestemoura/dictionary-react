@@ -1,5 +1,6 @@
 .Dictionary form {
   margin: 30px;
+  width: 80%;
 }
 
 .Dictionary input {
@@ -8,10 +9,10 @@
   display: block;
   font-family: "M PLUS 1p", sans-serif;
   font-size: 20px;
-  margin: 0 auto;
+  margin-left: -30px;
   padding: 10px;
-  text-align: center;
-  width: 60%;
+  text-align: left;
+  width: 80%;
 }
 
 .Dictionary .search-button {
@@ -19,8 +20,8 @@
   font-size: 30px;
   opacity: 0.8;
   position: relative;
-  top: 44px;
-  right: 210px;
+  top: 40px;
+  left: -415px;
 }
 
 .Dictionary .search-button:hover {
@@ -30,7 +31,7 @@
 @media (max-width: 576px) {
   .Dictionary input {
     font-size: 15px;
-    width: 120%;
+    width: 100%;
   }
 
   .Dictionary .search-button {

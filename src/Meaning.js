@@ -41,7 +41,7 @@ export default function Meaning(props) {
       {props.meaning.definitions.map(function (definition, index) {
         return (
           <div key={index} className="definition">
-            <p>
+            <p className="indent">
               {" "}
               {definitionIndex[index]}. {definition.definition}
             </p>

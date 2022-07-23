@@ -20,3 +20,7 @@
 .Meaning .example {
   color: var(--main-color);
 }
+
+.Meaning .indent {
+ text-indent: -1em;
+}

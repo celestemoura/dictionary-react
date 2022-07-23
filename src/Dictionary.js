@@ -9,13 +9,17 @@ export default function Dictionary(props) {
   const [loaded, setLoaded] = useState(false);
 
   function handleResponse(response) {
-    setResults(response.data[0]);
+      setResults(response.data[0]);
   }
 
   function search() {
     //https://dictionaryapi.dev/
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${query}`;
-    axios.get(apiUrl).then(handleResponse);
+    if (query === null) {
+      alert("no");
+    } else {
+      axios.get(apiUrl).then(handleResponse);
+    }
   }
 
   function load() {
