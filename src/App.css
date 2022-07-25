@@ -1,6 +1,9 @@
 :root {
   --main-color: #702283;
   --secondary-color: #962071;
+
+  --main-font-family: "M PLUS 1p", sans-serif;
+  --font-family-headlines: "Noto Serif", serif;
 }
 
 .App footer {
@@ -17,6 +20,10 @@
   color: var(--main-color);
   font-size: 24px;
   opacity: 0.8;
+}
+
+.App .github-icon:hover {
+  color: var(--secondary-color);
 }
 
 @media (max-width: 576px) {

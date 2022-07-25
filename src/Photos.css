@@ -1,0 +1,32 @@
+.Photos {
+  font-family: var(--main-font-family);
+}
+
+.Photos a {
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+.Photos a:hover {
+  color: var(--secondary-color);
+}
+
+.Photos img {
+  border-radius: 5px;
+}
+
+.Photos .each-img {
+    padding: 10px;
+}
+
+.Photos .photo-source-info {
+  font-size: small;
+  margin-top: 20px;
+  text-align: center;
+}
+
+@media (max-width: 576px) {
+.Photos .each-img {
+padding: 5px;
+    }
+}

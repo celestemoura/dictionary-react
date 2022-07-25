@@ -7,7 +7,7 @@
   border: 1px solid var(--main-color);
   border-radius: 8px;
   display: block;
-  font-family: "M PLUS 1p", sans-serif;
+  font-family: var(--main-font-family);
   font-size: 20px;
   margin-left: -30px;
   padding: 10px;

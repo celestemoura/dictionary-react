@@ -1,3 +1,7 @@
+.Phonetic .audio-icon {
+  color: var(--main-color);
+}
+
 .Phonetic .audio-icon:hover {
   color: var(--secondary-color);
   cursor: pointer;

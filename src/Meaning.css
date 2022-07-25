@@ -1,5 +1,5 @@
 .Meaning {
-  font-family: "M PLUS 1p", sans-serif;
+  font-family: var(--main-font-family);
 }
 
 .Meaning h2 {
@@ -22,5 +22,5 @@
 }
 
 .Meaning .indent {
- text-indent: -1em;
+  text-indent: -1em;
 }
