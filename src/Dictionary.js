@@ -18,10 +18,20 @@ export default function Dictionary(props) {
     setPhotos(response.data.photos);
   }
 
+  function handleErrors() {
+    setResults(null);
+  }
+
   function search() {
     //https://dictionaryapi.dev/
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${query}`;
-    axios.get(apiUrl).then(handleResponse);
+    fetch(apiUrl).then(function (response) {
+      if (!response.ok) {
+        handleErrors();
+      } else {
+        axios.get(apiUrl).then(handleResponse);
+      }
+    });
 
     const pexelsApiKey =
       "563492ad6f91700001000001d1dc787f1d31428abfcb8e2e30356da0";
@@ -48,7 +58,7 @@ export default function Dictionary(props) {
     return (
       <div className="Dictionary">
         <div className="row search-engine">
-          <div className="col-lg-11">
+          <div className="col-lg-12">
             <form onSubmit={handleSubmit}>
               <input
                 type="search"
@@ -56,12 +66,6 @@ export default function Dictionary(props) {
                 placeholder="Search for a Word"
               />
             </form>
-          </div>
-          <div className="col-lg-1">
-            <i
-              className="fa-solid fa-magnifying-glass search-button"
-              onClick={handleSubmit}
-            ></i>
           </div>
         </div>
         <Results results={results} />

@@ -8,7 +8,8 @@ export default function Results(props) {
     return (
       <div className="Results">
         <h1>
-          <span className="pre-headline">definitions of </span><br />
+          <span className="pre-headline">definitions of </span>
+          <br />
           {props.results.word}
         </h1>
         {props.results.phonetics.map(function (phonetic, index) {

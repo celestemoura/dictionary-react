@@ -1,6 +1,5 @@
 .Dictionary form {
-  margin: 30px;
-  width: 80%;
+  width: 100%;
 }
 
 .Dictionary input {
@@ -9,10 +8,10 @@
   display: block;
   font-family: var(--main-font-family);
   font-size: 20px;
-  margin-left: -30px;
+  margin: 0 auto;
   padding: 10px;
-  text-align: left;
-  width: 80%;
+  text-align: center;
+  width: 100%;
 }
 
 .Dictionary .search-button {
