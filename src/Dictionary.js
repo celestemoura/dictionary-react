@@ -18,7 +18,7 @@ export default function Dictionary(props) {
     setPhotos(response.data.photos);
   }
 
-  function handleErrors() {
+  function handleWordNotFound() {
     setResults(null);
   }
 
@@ -27,7 +27,7 @@ export default function Dictionary(props) {
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${query}`;
     fetch(apiUrl).then(function (response) {
       if (!response.ok) {
-        handleErrors();
+        handleWordNotFound();
       } else {
         axios.get(apiUrl).then(handleResponse);
       }

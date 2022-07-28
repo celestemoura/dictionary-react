@@ -19,6 +19,10 @@
     padding: 10px;
 }
 
+.Photos .photo-container {
+  margin-top: 10px
+}
+
 .Photos .photo-source-info {
   font-size: small;
   margin-top: 20px;

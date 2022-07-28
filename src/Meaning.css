@@ -22,5 +22,9 @@
 }
 
 .Meaning .indent {
-  text-indent: -1em;
+  text-indent: -1.2em;
+}
+
+.Meaning .larger-indent {
+  text-indent: -1.8em;
 }
